@@ -9,13 +9,13 @@ import java.util.Map;
 import java.util.ArrayList;
 
 /**
- * ST表
+ * DSU
  *
  * @author xucheng
  * @since 1.0.0
  * @param <T>
  */
-public class ST<T> {
+public class DSU<T> {
     // 最大大小
     private final int maxSize;
     // 索引
@@ -25,11 +25,11 @@ public class ST<T> {
     // 存储信息
     private final List<Integer> f = new ArrayList<>();
 
-    public ST() {
+    public DSU() {
         this.maxSize = 100000;
         f.add(0);
     }
-    public ST(int size) {
+    public DSU(int size) {
         this.maxSize = size;
         f.add(0);
     }
